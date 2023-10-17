@@ -67,4 +67,5 @@
     <preference name="StatusBarStyle" value="lightcontent" />
     <preference name="ScrollEnabled" value="true" />
     <preference name="DisallowOverscroll" value="true" />
+    <preference name="UIWebViewBounce" value="false" />
 </widget>
