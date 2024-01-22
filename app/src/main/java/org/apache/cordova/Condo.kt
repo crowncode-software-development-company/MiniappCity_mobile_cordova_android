@@ -176,7 +176,7 @@ class Condo : CordovaPlugin() {
         private const val ACTION_REQUEST_SERVER_AUTH = "requestServerAuthorization"
         private const val ACTION_REQUEST_SERVER_AUTH_BY_URL = "requestServerAuthorizationByUrl"
         private const val ACTION_GET_CURRENT_RESIDENT = "getCurrentResident"
-
+        private const val ACTION_GET_LAUNCH_CONTEXT = "getLaunchContext"
         const val ACTION_CLOSE_MINIAPP = "closeApplication"
     }
 
