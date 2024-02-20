@@ -1,4 +1,5 @@
 {
+
   "cordova-plugin-whitelist": {
     "source": {
       "type": "registry",
@@ -11,6 +12,22 @@
     "source": {
       "type": "registry",
       "id": "https://github.com/open-condo-software/mobile_cordova_plugin_condo.git"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-statusbar": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-statusbar@^3.0.0"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-hidescrollbar": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-hidescrollbar@^1.0.2"
     },
     "is_top_level": true,
     "variables": {}

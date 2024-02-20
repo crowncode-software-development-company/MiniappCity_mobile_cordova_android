@@ -13,6 +13,12 @@
     "cordova-plugin-condo": {
       "PACKAGE_NAME": "io.cordova.hellocordova.demo.app"
     },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "io.cordova.hellocordova.demo.app"
+    },
+    "cordova-plugin-hidescrollbar": {
+      "PACKAGE_NAME": "io.cordova.hellocordova.demo.app"
+    },
     "cordova-plugin-device": {
       "PACKAGE_NAME": "io.cordova.hellocordova.demo.app"
     }
