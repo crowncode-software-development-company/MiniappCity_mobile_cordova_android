@@ -34,5 +34,9 @@ cordova.define(
     exports.setInputsEnabled = function (arg0, success, error) {
       exec(success, error, "Condo", "setInputsEnabled", [arg0]);
     };
+
+    exports.getLaunchContext = function (success, error) {
+      exec(success, error, "Condo", "getLaunchContext", []);
+    };
   }
 );

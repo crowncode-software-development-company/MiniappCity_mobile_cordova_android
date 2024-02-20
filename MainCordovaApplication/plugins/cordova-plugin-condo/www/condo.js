@@ -1,25 +1,37 @@
-var exec = require('cordova/exec');
+var exec = require("cordova/exec");
 
 exports.requestAuthorization = function (arg0, arg1, success, error) {
-    exec(success, error, 'Condo', 'requestAuthorization', [arg0, arg1]);
+  exec(success, error, "Condo", "requestAuthorization", [arg0, arg1]);
 };
 
-exports.requestServerAuthorizationByUrl = function (arg0, arg1, success, error) {
-    exec(success, error, 'Condo', 'requestServerAuthorizationByUrl', [arg0, arg1]);
+exports.requestServerAuthorizationByUrl = function (
+  arg0,
+  arg1,
+  success,
+  error
+) {
+  exec(success, error, "Condo", "requestServerAuthorizationByUrl", [
+    arg0,
+    arg1,
+  ]);
 };
 
 exports.openURLWithFallback = function (arg0, arg1, success, error) {
-    exec(success, error, 'Condo', 'openURLWithFallback', [arg0, arg1]);
+  exec(success, error, "Condo", "openURLWithFallback", [arg0, arg1]);
 };
 
 exports.closeApplication = function (success, error) {
-    exec(success, error, 'Condo', 'closeApplication', []);
+  exec(success, error, "Condo", "closeApplication", []);
 };
 
 exports.getCurrentResident = function (success, error) {
-    exec(success, error, 'Condo', 'getCurrentResident', []);
+  exec(success, error, "Condo", "getCurrentResident", []);
 };
 
 exports.setInputsEnabled = function (arg0, success, error) {
-    exec(success, error, 'Condo', 'setInputsEnabled', [arg0]);
+  exec(success, error, "Condo", "setInputsEnabled", [arg0]);
+};
+
+exports.getLaunchContext = function (success, error) {
+  exec(success, error, "Condo", "getLaunchContext", []);
 };

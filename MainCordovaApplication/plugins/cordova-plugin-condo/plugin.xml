@@ -16,6 +16,8 @@
         <source-file src="src/android/Condo.java" target-dir="src/cordova-plugin-condo/Condo" />
     </platform>
     <platform name="ios">
+        <preference name="DisallowOverscroll" value="true" />
+        <preference name="ScrollEnabled" value="true" />
         <config-file parent="/*" target="config.xml">
             <feature name="Condo">
                 <param name="ios-package" value="Condo" />
