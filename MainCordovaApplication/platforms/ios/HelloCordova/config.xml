@@ -28,9 +28,8 @@
     <feature name="Condo">
         <param name="ios-package" value="Condo" />
     </feature>
-    <feature name="StatusBar">
-        <param name="ios-package" value="CDVStatusBar" />
-        <param name="onload" value="true" />
+    <feature name="Device">
+        <param name="ios-package" value="CDVDevice" />
     </feature>
     <name>HelloCordova</name>
     <description>
@@ -53,6 +52,7 @@
     <preference name="AllowInlineMediaPlayback" value="false" />
     <preference name="BackupWebStorage" value="cloud" />
     <preference name="EnableViewportScale" value="false" />
+    <preference name="UIWebViewBounce" value="false" />
     <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="StatusBarBackgroundColor" value="#f7f7f7" />
     <preference name="KeyboardDisplayRequiresUserAction" value="true" />
@@ -64,8 +64,6 @@
     <preference name="PageLength" value="0" />
     <preference name="PaginationBreakingMode" value="page" />
     <preference name="PaginationMode" value="unpaginated" />
-    <preference name="StatusBarStyle" value="lightcontent" />
     <preference name="ScrollEnabled" value="true" />
     <preference name="DisallowOverscroll" value="true" />
-    <preference name="UIWebViewBounce" value="false" />
 </widget>
