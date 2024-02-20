@@ -11,6 +11,10 @@
             {
               "xml": "<feature name=\"Condo\"><param name=\"ios-package\" value=\"Condo\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -23,6 +27,9 @@
     },
     "cordova-plugin-condo": {
       "PACKAGE_NAME": "io.cordova.hellocordova.demo.app"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "io.cordova.hellocordova.demo.app"
     }
   },
   "dependent_plugins": {},
@@ -34,10 +41,19 @@
       "clobbers": [
         "cordova.plugins.condo"
       ]
+    },
+    {
+      "id": "cordova-plugin-device.device",
+      "file": "plugins/cordova-plugin-device/www/device.js",
+      "pluginId": "cordova-plugin-device",
+      "clobbers": [
+        "device"
+      ]
     }
   ],
   "plugin_metadata": {
     "cordova-plugin-whitelist": "1.3.5",
-    "cordova-plugin-condo": "0.0.1"
+    "cordova-plugin-condo": "0.0.1",
+    "cordova-plugin-device": "2.1.0"
   }
 }

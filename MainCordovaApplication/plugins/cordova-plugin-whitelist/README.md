@@ -2,6 +2,7 @@
 title: Whitelist
 description: Whitelist external content accessible by your app.
 ---
+
 <!--
 # license: Licensed to the Apache Software Foundation (ASF) under one
 #         or more contributor license agreements.  See the NOTICE file
@@ -46,7 +47,7 @@ $ cordova prepare
 
 ## Supported Cordova Platforms
 
-* Android 4.0.0 or above
+- Android 4.0.0 or above
 
 ## Navigation Whitelist
 
@@ -120,7 +121,7 @@ Note: `allow-navigation` takes precedence over `allow-intent`. Allowing navigati
 
 Controls which network requests (images, XHRs, etc) are allowed to be made (via cordova native hooks).
 
-Note: We suggest you use a Content Security Policy (see below), which is more secure.  This whitelist is mostly historical for webviews which do not support CSP.
+Note: We suggest you use a Content Security Policy (see below), which is more secure. This whitelist is mostly historical for webviews which do not support CSP.
 
 In `config.xml`, add `<access>` tags, like this:
 
@@ -166,20 +167,35 @@ Here are some example CSP declarations for your `.html` pages:
         * Enable inline JS: add 'unsafe-inline' to default-src
         * Enable eval(): add 'unsafe-eval' to default-src
 -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *">
+<meta
+  http-equiv="Content-Security-Policy"
+  content="default-src 'self' data: gap: https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *"
+/>
 
 <!-- Allow everything but only from the same origin and foo.com -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self' foo.com">
+<meta
+  http-equiv="Content-Security-Policy"
+  content="default-src 'self' foo.com"
+/>
 
 <!-- This policy allows everything (eg CSS, AJAX, object, frame, media, etc) except that 
     * CSS only from the same origin and inline styles,
     * scripts only from the same origin and inline styles, and eval()
 -->
-<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+<meta
+  http-equiv="Content-Security-Policy"
+  content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'"
+/>
 
 <!-- Allows XHRs only over HTTPS on the same domain. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self' https:">
+<meta
+  http-equiv="Content-Security-Policy"
+  content="default-src 'self' https:"
+/>
 
 <!-- Allow iframe to https://cordova.apache.org/ -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; frame-src 'self' https://cordova.apache.org">
+<meta
+  http-equiv="Content-Security-Policy"
+  content="default-src 'self'; frame-src 'self' https://cordova.apache.org"
+/>
 ```

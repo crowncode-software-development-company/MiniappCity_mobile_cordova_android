@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[68],{71010:function(n,_,u){(window.__NEXT_P=window.__NEXT_P||[]).push(["/pass/new-pass",function(){return u(1948)}])}},function(n){n.O(0,[774,888,179],function(){return n(n.s=71010)}),_N_E=n.O()}]);
