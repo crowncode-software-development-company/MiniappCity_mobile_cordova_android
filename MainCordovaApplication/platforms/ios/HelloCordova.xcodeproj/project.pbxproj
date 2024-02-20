@@ -15,6 +15,10 @@
 		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
+		D94EC827D67B4605A2A2D746 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B4AB88DB3E9A41FCA1EE1304 /* CDVStatusBar.m */; };
+		0088627C8063445BBF6FFF1B /* CDVHideScrollbar.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F82E630B544C05B6CE551E /* CDVHideScrollbar.m */; };
+		62D7613BA5A741419C59DF91 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F5024CD41D174C4CB04E386C /* libz.tbd */; };
+		F725C3D249F244CEAA7CDE1C /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF62C5346A644439C01ADCA /* CDVDevice.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,13 @@
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = HelloCordova/config.xml; sourceTree = "<group>"; };
+		B4AB88DB3E9A41FCA1EE1304 /* CDVStatusBar.m */ = {isa = PBXFileReference; name = "CDVStatusBar.m"; path = "cordova-plugin-statusbar/CDVStatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		9872D222D8024A4AAD2B3FFC /* CDVStatusBar.h */ = {isa = PBXFileReference; name = "CDVStatusBar.h"; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F7F82E630B544C05B6CE551E /* CDVHideScrollbar.m */ = {isa = PBXFileReference; name = "CDVHideScrollbar.m"; path = "cordova-plugin-hidescrollbar/CDVHideScrollbar.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		5660FF6ACF42481FA23BC6BF /* CDVHideScrollbar.h */ = {isa = PBXFileReference; name = "CDVHideScrollbar.h"; path = "cordova-plugin-hidescrollbar/CDVHideScrollbar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F5024CD41D174C4CB04E386C /* libz.tbd */ = {isa = PBXFileReference; name = "libz.tbd"; path = "usr/lib/libz.tbd"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = sourcecode.text-based-dylib-definition; explicitFileType = undefined; includeInIndex = 0; };
+		2CF62C5346A644439C01ADCA /* CDVDevice.m */ = {isa = PBXFileReference; name = "CDVDevice.m"; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		DCF8BE3670454FC183FF22EC /* CDVDevice.h */ = {isa = PBXFileReference; name = "CDVDevice.h"; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +82,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				62D7613BA5A741419C59DF91 /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +153,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F5024CD41D174C4CB04E386C /* libz.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -168,6 +181,12 @@
 			isa = PBXGroup;
 			children = (
 				08B86B7D84844C109CAA499F /* Condo.m */,
+				B4AB88DB3E9A41FCA1EE1304 /* CDVStatusBar.m */,
+				9872D222D8024A4AAD2B3FFC /* CDVStatusBar.h */,
+				F7F82E630B544C05B6CE551E /* CDVHideScrollbar.m */,
+				5660FF6ACF42481FA23BC6BF /* CDVHideScrollbar.h */,
+				2CF62C5346A644439C01ADCA /* CDVDevice.m */,
+				DCF8BE3670454FC183FF22EC /* CDVDevice.h */,
 			);
 			name = Plugins;
 			path = HelloCordova/Plugins;
@@ -292,6 +311,9 @@
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				07CC5E72EF09419FAAA2BF1C /* Condo.m in Sources */,
+				D94EC827D67B4605A2A2D746 /* CDVStatusBar.m in Sources */,
+				0088627C8063445BBF6FFF1B /* CDVHideScrollbar.m in Sources */,
+				F725C3D249F244CEAA7CDE1C /* CDVDevice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
